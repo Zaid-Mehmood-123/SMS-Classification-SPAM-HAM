@@ -41,10 +41,7 @@
 > 🧠 * gave the best performance overall!*
 
 ---
-
-## 🧪 How to Run
-
-```bash
+ ```bash
 # Install dependencies
 pip install -r requirements.txt
 
@@ -54,6 +51,8 @@ pip install numpy pandas matplotlib seaborn scikit-learn nltk
 # Download NLTK assets
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
+```
+## 🧪 How to Run
 👤 Author
 Zaid Mehmood
 🎓 AI Student @ Superior University
@@ -66,3 +65,5 @@ Zaid Mehmood
 
 ⭐ If you like this project...
 Give it a ⭐ on GitHub and share it with your friends! It helps a lot 😄
+
+
