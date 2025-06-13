@@ -1,7 +1,5 @@
-# SMS-Classification-SPAM-HAM
+#📱 SMS Classification: Spam or Ham
 A project that classifies SMS messages as Spam or Ham using natural language processing and machine learning models (Naive Bayes, Logistic Regression, SVM, etc.).
-
-📱 SMS Classification: Spam or Ham
 
 Overview
 
@@ -21,22 +19,6 @@ Comparison of models to select the best performer
 
 📂 Dataset
 Source: SMS Spam Collection (5,574 labeled messages: “ham” or “spam”) 
-github.com
-+10
-github.com
-+10
-kaggle.com
-+10
-kaggle.com
-+1
-github.com
-+1
-github.com
-+2
-github.com
-+2
-github.com
-+2
 
 Format: TSV with columns:
 
@@ -47,24 +29,16 @@ v2: raw text message
 🚧 Installation & Setup
 Ensure you have the following dependencies (e.g. via requirements.txt or direct install):
 
-bash
-Copy
-Edit
 pip install numpy pandas matplotlib seaborn scikit-learn nltk
 If you’d like to use TensorFlow/Keras models later:
 
-bash
-Copy
-Edit
 pip install tensorflow
 Pre-download NLTK resources inside your notebook:
 
-python
-Copy
-Edit
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
+
 🧩 Project Structure (Notebook Flow)
 Import libraries: pandas, numpy, matplotlib, seaborn, nltk, sklearn
 
@@ -104,15 +78,6 @@ Select and save the best model
 
 📊 Results & Findings
 Naive Bayes with TF-IDF typically achieves above 97% accuracy, aligning with other studies 
-github.com
-+3
-github.com
-+3
-github.com
-+3
-github.com
-github.com
-arxiv.org
 
 Logistic Regression and SVM often perform competitively
 
@@ -153,20 +118,6 @@ Deploy as a real‑time web API for live SMS filtering
 
 References
 SMS Spam Collection Dataset: publicly available on Kaggle 
-github.com
-arxiv.org
-+1
-github.com
-+1
-github.com
-
-Notebooks and methods inspired by various Kaggle tutorials on SMS spam classification 
-github.com
-+14
-github.com
-+14
-kaggle.com
-+14
 
 📄 License
 This work is released under an MIT-style license—feel free to use and modify for personal or educational projects!
