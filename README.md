@@ -1,124 +1,68 @@
-#📱 SMS Classification: Spam or Ham
-A project that classifies SMS messages as Spam or Ham using natural language processing and machine learning models (Naive Bayes, Logistic Regression, SVM, etc.).
+<h1 align="center">
+  📩 SMS Spam Classifier
+</h1>
 
-Overview
+<p align="center">
+  <img src="https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif" width="300" alt="Spam Detection Animation" />
+</p>
 
-This project builds a machine learning pipeline to classify SMS messages as spam or ham (legitimate). Key steps include:
+<p align="center">
+  A Machine Learning project that classifies SMS messages as <b>Spam</b> or <b>Ham</b> using NLP techniques.
+</p>
 
-Data loading
+---
 
-Text preprocessing: normalization, tokenization, stop word removal
+## 🚀 Features
 
-Feature extraction: Bag‑of‑Words and TF‑IDF
+- Clean text preprocessing (tokenization, stopword removal)
+- Feature extraction with TF-IDF
+- Model training: Naive Bayes, Logistic Regression, RandomForestRegression
+- Evaluation with accuracy, precision, recall, F1-score
+- Confusion matrix and data visualizations
 
-Model training: Naive Bayes, Logistic Regression, SVM, etc.
+---
 
-Evaluation: Accuracy, Precision, Recall, F1‑score, Confusion Matrix
+## 📁 Dataset
 
-Comparison of models to select the best performer
+- **Name**: SMS Spam Collection Dataset
+- **Size**: 5,574 SMS messages labeled as `ham` or `spam`
+- [🔗 View Dataset on Kaggle](https://www.kaggle.com/datasets/ham-vs-spam-sms-classification-dataset)
 
-📂 Dataset
-Source: SMS Spam Collection (5,574 labeled messages: “ham” or “spam”) 
+---
 
-Format: TSV with columns:
+## 📊 Model Performance
 
-v1: label (ham/spam)
+| Model                    | Accuracy |
+|--------------------------|----------|
+| Naive Bayes              | 97%      |
+| Logistic Regression      | 95%      |
+| RandomforestRegression   | 98%      |
 
-v2: raw text message
+> 🧠 * gave the best performance overall!*
 
-🚧 Installation & Setup
-Ensure you have the following dependencies (e.g. via requirements.txt or direct install):
+---
 
+## 🧪 How to Run
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# OR install manually
 pip install numpy pandas matplotlib seaborn scikit-learn nltk
-If you’d like to use TensorFlow/Keras models later:
 
-pip install tensorflow
-Pre-download NLTK resources inside your notebook:
+# Download NLTK assets
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
-import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
+👤 Author
+Zaid Mehmood
+🎓 AI Student @ Superior University
+📍 Lahore, Pakistan
+📧 zaidmehmood@example.com
+🌐 LinkedIn • GitHub
 
-🧩 Project Structure (Notebook Flow)
-Import libraries: pandas, numpy, matplotlib, seaborn, nltk, sklearn
+🏷️ Tags
+#machinelearning #nlp #spam-classifier #text-classification #scikit-learn #python
 
-Load dataset and inspect class balance
-
-Text cleaning:
-
-Lowercasing
-
-Removing punctuation & numbers
-
-Tokenization
-
-Stop word removal and optional stemming/lemmatization
-
-Feature engineering:
-
-Convert to numeric features using CountVectorizer and/or TfidfVectorizer
-
-Train/test split
-
-Model training:
-
-Baseline with Multinomial Naive Bayes
-
-Try Logistic Regression, SVM, etc.
-
-Use cross-validation and hyperparameter tuning
-
-Model evaluation:
-
-Metrics: accuracy, precision, recall, F1‑score
-
-Confusion matrix visualization
-
-Select and save the best model
-
-📊 Results & Findings
-Naive Bayes with TF-IDF typically achieves above 97% accuracy, aligning with other studies 
-
-Logistic Regression and SVM often perform competitively
-
-Present confusion matrix and detailed metrics in the notebook
-
-🏆 Notebook Highlights
-Clean, reproducible pipeline—from raw text to evaluation plots
-
-Comparison across multiple classifiers and vectorization techniques
-
-Insightful visualizations: word clouds, label distribution, confusion matrices
-
-📌 How to Run
-Clone or download the notebook from Kaggle.
-
-Upload to Kaggle or your local Jupyter environment.
-
-Ensure all dependencies are installed (see Installation).
-
-Run cells sequentially.
-
-📈 Inspect results and experiment with:
-
-New classifiers (Random Forests, XGBoost)
-
-Advanced text processing (e.g. n‑grams, stemming)
-
-Deep learning via tensorflow.keras
-
-🛠️ Extensions & Ideas
-Incorporate word n‑grams, character‑level features
-
-Apply SMOTE or other techniques to balance dataset
-
-Explore deep learning (e.g., LSTM, CNN, Transformer models)
-
-Deploy as a real‑time web API for live SMS filtering
-
-References
-SMS Spam Collection Dataset: publicly available on Kaggle 
-
-📄 License
-This work is released under an MIT-style license—feel free to use and modify for personal or educational projects!
-
+⭐ If you like this project...
+Give it a ⭐ on GitHub and share it with your friends! It helps a lot 😄
