@@ -41,6 +41,8 @@
 > 🧠 * gave the best performance overall!*
 
 ---
+## 🧪 How to Run
+
  ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -52,13 +54,18 @@ pip install numpy pandas matplotlib seaborn scikit-learn nltk
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
 ```
-## 🧪 How to Run
+
 👤 Author
+
 Zaid Mehmood
+
 🎓 AI Student @ Superior University
+
 📍 Lahore, Pakistan
-📧 zaidmehmood@example.com
-🌐 LinkedIn • GitHub
+
+📧 zaidmehmood0123@gmail.com
+
+🌐 LinkedIn "ZAID MEHMOOD"
 
 🏷️ Tags
 #machinelearning #nlp #spam-classifier #text-classification #scikit-learn #python
